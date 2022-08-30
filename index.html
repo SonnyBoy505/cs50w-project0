@@ -3,11 +3,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <h1></h1>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MY FAVOURITE CARS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MY FAVOURITE CARS</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header container-fluid" style="background-image: url('images/header-bg.jpg'), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); background-blend-mode: overlay;
+    background-size: cover; background-position: center;">
+        <p>
+          <h1><img id="foto-perfil" src="images/foto-perfil.JPG" alt="imagen del autor" width="158" height="170">     
+            ¿Quién soy?</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at elementum est, id condimentum sem.
+        Pellentesque lectus justo, dictum at gravida sit amet, convallis at justo. Aliquam non dui tellus.
+        Fusce congue fermentum ullamcorper. Maecenas sit amet urna eu nibh accumsan placerat. 
+        Nulla ut mollis velit, et aliquam lectus. Cras cursus sit amet sem eget mattis. Vivamus auctor, 
+        ante sit amet varius porttitor, dui odio venenatis enim, efficitur tincidunt odio lacus in urna.
+        </p>
+        
+    </div>
+    <div class="content container">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>¿De qué trata esta página?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nibh vitae hendrerit elementum. 
+              Quisque malesuada vulputate tellus, eget consectetur leo. Phasellus tristique leo nibh, in malesuada mauris aliquam vitae. 
+              Nam vel egestas lorem, non viverra nisi. Nulla dapibus justo vel ornare egestas. Curabitur a dui vestibulum, blandit felis sed, cursus tortor. 
+              Integer viverra elit vitae luctus suscipit. Nulla vitae pharetra tellus. Aenean ut quam odio. Praesent nisl felis, suscipit a sapien et, ultricies cursus mauris. 
+              Nam pulvinar et purus vel scelerisque. Ut quam sem, viverra ut est ac, euismod ultrices enim. Pellentesque tincidunt tellus ac auctor blandit.</p>
+            
+            
+            <h2>¿Cuál es mi historia con los autos?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nibh vitae hendrerit elementum. 
+            Quisque malesuada vulputate tellus, eget consectetur leo. Phasellus tristique leo nibh, in malesuada mauris aliquam vitae. 
+            Nam vel egestas lorem, non viverra nisi. Nulla dapibus justo vel ornare egestas. Curabitur a dui vestibulum, blandit felis sed, cursus tortor. 
+            Integer viverra elit vitae luctus suscipit. Nulla vitae pharetra tellus. Aenean ut quam odio. Praesent nisl felis, suscipit a sapien et, ultricies cursus mauris. 
+            Nam pulvinar et purus vel scelerisque. Ut quam sem, viverra ut est ac, euismod ultrices enim. Pellentesque tincidunt tellus ac auctor blandit.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Acerca de mí</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer"></div>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
