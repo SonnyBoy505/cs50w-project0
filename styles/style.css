@@ -13,6 +13,13 @@ body{
     justify-content: left;
 }
 
+.header-nsx{
+  padding: 100px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
 .content h2{
    margin-top: 50px;
 }
@@ -49,6 +56,13 @@ body{
     width: 25%;
     padding-left: 20px;
   }
+
+figure img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 
 /*@media screen and (max-width: 800px) {
     .left, .main, .right {
