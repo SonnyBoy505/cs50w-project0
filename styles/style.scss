@@ -149,3 +149,22 @@ p{
   text-align: justify;
 }
 
+@media (max-width: 991.08px) {
+  .col-4 {width: 100%}
+  .col-7 {width: 100%}
+  .col-5 {width: 100%}
+  .segunda-columna {border-left: 0; border-top: 1px solid rgb(188, 188, 188);}
+  .segunda-columna p {margin-top: 5%}
+}
+
+/*@include media-breakpoint-down(lg) {
+  .col-4 {width: 100%}
+  .col-7 {width: 100%}
+  .col-5 {width: 100%}
+  .segunda-columna {border-left: 0; border-top: 1px solid grey;}
+  .segunda-columna p {margin-top: 5%}
+}*/
+
+#fuentes{
+  text-align: left;
+}
