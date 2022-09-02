@@ -1,0 +1,151 @@
+$bg-color: #D3D3D3;
+
+body{
+    background-color: $bg-color;
+    font-family: OpenSans, sans-serif;
+}
+
+#favourite-columns > div {
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5%;
+    border: 1px solid #D3D3D3;
+    //border-right: 1px solid #525B56;
+    //border-left: 1px solid #525B56;
+    margin-top: 5%;
+}
+
+#favourite-columns:hover > div {
+    background-color: $bg-color;
+    //border-right: 1px solid #525B56;
+}
+
+.header{
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.header{
+    h1{
+        justify-content: left;
+    }
+}
+
+.header-nsx{
+  padding: 100px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.content{
+    h4{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.foto-perfil{
+    border-radius: 50%;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(115, 115, 115);
+    margin-top: 20px;
+  }
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+ .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+figure 
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+/*@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%;
+    }
+  }*/
+.left, .main, .right 
+{
+      width: 100%;
+}
+
+.title-car{
+  font-size: 170%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.title-specs{
+  text-align: center; 
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 110%
+}
+
+.segunda-columna
+{
+  border-left: 1px solid grey;
+  text-align: justify;
+  padding-top: 2%;
+}
+
+.desplazadores{
+  display: inline-block;
+  margin-top: 2%;
+}
+
+.desplazadores a:last-of-type{
+  margin-left: 87%;
+}
+
+.desplazadores a:first-child{
+  margin-left: 0%;
+}
+
+.lista-links
+{
+  list-style-image: url('../images/bullet-icon.png');
+  text-align: center;
+  color: hotpink;
+}
+
+li a{
+  color:white;
+}
+
+div.polaroid {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+p{
+  text-align: justify;
+}
+

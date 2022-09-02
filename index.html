@@ -52,7 +52,7 @@
     <div class="header container-fluid" style="background-image: url('images/header-bg.jpg'), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); background-blend-mode: overlay;
     background-size: cover; background-position: center;">
         <p>
-          <h1><img id="foto-perfil" src="images/foto-perfil.JPG" alt="imagen del autor" width="158" height="170">     
+          <h1><img class="foto-perfil" src="images/foto-perfil.JPG" alt="imagen del autor" width="158" height="170">     
             ¿Quién soy?</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at elementum est, id condimentum sem.
         Pellentesque lectus justo, dictum at gravida sit amet, convallis at justo. Aliquam non dui tellus.
@@ -66,7 +66,7 @@
       <div class="row">
         <div class="leftcolumn">
           <div class="card">
-            <h2>¿De qué trata esta página?</h2>
+            <h4>¿De qué trata esta página?</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nibh vitae hendrerit elementum. 
               Quisque malesuada vulputate tellus, eget consectetur leo. Phasellus tristique leo nibh, in malesuada mauris aliquam vitae. 
               Nam vel egestas lorem, non viverra nisi. Nulla dapibus justo vel ornare egestas. Curabitur a dui vestibulum, blandit felis sed, cursus tortor. 
@@ -74,20 +74,20 @@
               Nam pulvinar et purus vel scelerisque. Ut quam sem, viverra ut est ac, euismod ultrices enim. Pellentesque tincidunt tellus ac auctor blandit.</p>
             
             
-            <h2>¿Cuál es mi historia con los autos?</h2>
+            <h4>¿Cuál es mi historia con los autos?</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nibh vitae hendrerit elementum. 
             Quisque malesuada vulputate tellus, eget consectetur leo. Phasellus tristique leo nibh, in malesuada mauris aliquam vitae. 
             Nam vel egestas lorem, non viverra nisi. Nulla dapibus justo vel ornare egestas. Curabitur a dui vestibulum, blandit felis sed, cursus tortor. 
             Integer viverra elit vitae luctus suscipit. Nulla vitae pharetra tellus. Aenean ut quam odio. Praesent nisl felis, suscipit a sapien et, ultricies cursus mauris. 
             Nam pulvinar et purus vel scelerisque. Ut quam sem, viverra ut est ac, euismod ultrices enim. Pellentesque tincidunt tellus ac auctor blandit.
           </p>
-          <h2>Los 3 que más me gustan:</h2>       
+          <h4>Los 3 que más me gustan:</h4>       
           <div class="container" >
-            <div class="row justify-content-evenly" id="favourite-columns">
+            <div class="row justify-content-between" id="favourite-columns">
               <div class="col-4">
                 <h4>Honda NSX</h4>
                 <p>
-                  El Honda NSX de primera generación es verdaderamente hermoso y mi carro favorito de todos los tiempos.
+                  El Honda NSX de primera generación es, a mi parecer, hermoso y mi carro favorito de todos los tiempos, he visto muchos videos de él, incluso uno en donde Aryton Senna lo maneja.
                 </p>
                   <a href="honda-nsx.html">click para leer más!</a>
               </div>
@@ -113,15 +113,34 @@
 
         </div>
         <div class="rightcolumn">
-          <div class="card">
-            <h2>Acerca de mí</h2>
-            <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <div class="polaroid">
+              <img src="images/polaroid-hondansx.jpg" style="width: 200%;">
           </div>
+          <div class="polaroid">
+            <img src="images/polaroid-hondansx2.jpg" style="width: 200%;">
+        </div>
+        <div class="polaroid">
+          <img src="images/m3gtr-polaroid.jpg" style="width: 200%;">
+      </div>
         </div>
       </div>
-      
-      <div class="footer"></div>
+      <div class="footer" style="background-image: url('images/footer-bg.jpg'), linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)); background-blend-mode: overlay;
+      background-size: cover; background-position: center;">
+        <div class="container lista-links">
+          <ul>
+              <li>
+                  <a href="https://github.com/SonnyBoy505" target="_blank">Mi Github!</a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com/watch?v=jvwDooKFMLk&list=PLEbr1J1RmsknaQFFYHdJLbgU4ptQ-270R&ab_channel=ImagineDragons-Topic" target="_blank">Música!</a>
+              </li>
+              <li>
+                  <a href="https://cs50.harvard.edu/web/2020/projects/0/search/" target="_blank">WEB50!</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
