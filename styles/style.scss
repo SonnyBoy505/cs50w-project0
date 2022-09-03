@@ -1,8 +1,13 @@
 $bg-color: #D3D3D3;
 
+%margintop-padding
+{
+  margin-top: 20px;
+  padding: 20px;
+}
+
 body{
     background-color: $bg-color;
-    font-family: OpenSans, sans-serif;
 }
 
 #favourite-columns > div {
@@ -51,18 +56,17 @@ body{
     border-radius: 50%;
 }
 
+.card {
+    @extend %margintop-padding;
+    background-color: white;
+    
+ }
 .footer {
-    padding: 20px;
+    @extend %margintop-padding;
     text-align: center;
     background: rgb(115, 115, 115);
-    margin-top: 20px;
   }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
- }
 
  .leftcolumn {   
     float: left;
@@ -150,11 +154,19 @@ p{
 }
 
 @media (max-width: 991.08px) {
-  .col-4 {width: 100%}
-  .col-7 {width: 100%}
-  .col-5 {width: 100%}
+  .col-4, .col-7, .col-5 {width: 100%;}
   .segunda-columna {border-left: 0; border-top: 1px solid rgb(188, 188, 188);}
   .segunda-columna p {margin-top: 5%}
+  .polaroid img{ display:none;}
+  .leftcolumn {   
+    float: none;
+    width: 100%;
+  }
+  .rightcolumn {
+    float: none;
+    width: 0%;
+  }
+
 }
 
 /*@include media-breakpoint-down(lg) {

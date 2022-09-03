@@ -1,6 +1,10 @@
+.footer, .card {
+  margin-top: 20px;
+  padding: 20px;
+}
+
 body {
   background-color: #D3D3D3;
-  font-family: OpenSans, sans-serif;
 }
 
 #favourite-columns > div {
@@ -42,17 +46,13 @@ body {
   border-radius: 50%;
 }
 
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: rgb(115, 115, 115);
-  margin-top: 20px;
-}
-
 .card {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  background: rgb(115, 115, 115);
 }
 
 .leftcolumn {
@@ -137,13 +137,7 @@ p {
 }
 
 @media (max-width: 991.08px) {
-  .col-4 {
-    width: 100%;
-  }
-  .col-7 {
-    width: 100%;
-  }
-  .col-5 {
+  .col-4, .col-7, .col-5 {
     width: 100%;
   }
   .segunda-columna {
@@ -152,6 +146,17 @@ p {
   }
   .segunda-columna p {
     margin-top: 5%;
+  }
+  .polaroid img {
+    display: none;
+  }
+  .leftcolumn {
+    float: none;
+    width: 100%;
+  }
+  .rightcolumn {
+    float: none;
+    width: 0%;
   }
 }
 /*@include media-breakpoint-down(lg) {
