@@ -159,6 +159,20 @@ p {
     width: 0%;
   }
 }
+@media (max-width: 1000px) {
+  desplazadores {
+    display: block;
+    margin-top: 2%;
+  }
+  .desplazadores a:last-of-type {
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1100px) {
+  .col-2, .col-10 {
+    width: 100%;
+  }
+}
 /*@include media-breakpoint-down(lg) {
   .col-4 {width: 100%}
   .col-7 {width: 100%}

@@ -178,6 +178,11 @@ p{
   }
 }
 
+@media (max-width: 1100px)
+{
+  .col-2, .col-10{width: 100%;}
+}
+
 /*@include media-breakpoint-down(lg) {
   .col-4 {width: 100%}
   .col-7 {width: 100%}
