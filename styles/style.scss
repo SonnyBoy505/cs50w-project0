@@ -166,7 +166,16 @@ p{
     float: none;
     width: 0%;
   }
+}
 
+@media (max-width: 1000px){
+  desplazadores{
+    display: block;
+    margin-top: 2%;
+  }
+  .desplazadores a:last-of-type{
+    margin-left: 0%;
+  }
 }
 
 /*@include media-breakpoint-down(lg) {
