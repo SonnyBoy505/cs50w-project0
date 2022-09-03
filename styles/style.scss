@@ -183,6 +183,10 @@ p{
   .col-2, .col-10{width: 100%;}
 }
 
+.col-10 h1{
+  margin-top: 3%;
+}
+
 /*@include media-breakpoint-down(lg) {
   .col-4 {width: 100%}
   .col-7 {width: 100%}
