@@ -1,0 +1,190 @@
+.container-inicio{
+    display:grid;
+    grid-template-columns: auto;
+    width:100%;
+    text-align: center;
+    align-items: center;
+}
+
+.box-login{
+  text-align: center;
+  margin-top: 5%;
+  width:40%;
+}
+
+  .campo-registro > input{
+    border: 1px solid #000;
+    border-radius: 25px;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 10px;
+    text-align:center;
+    align-items: center;
+  }
+
+nav {
+    padding-left: 0px;
+    background-color: aliceblue;
+  }
+  nav > li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  nav > li:hover {
+    background-color: #2779BF;
+  }
+  ul.nav > li > a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .individual_results {
+    padding: 15px 0;
+    border: 2px solid rgb(174, 214, 248);
+    border-radius: 2%;
+    margin-top: 1%;
+  }
+
+  .portada_libros {
+    height: 140px;
+    width:100px;
+    margin-left: 30%;
+  }
+
+  .portada_libros_individual {
+    height: 168px;
+    width:120px;
+    margin-left: 26%;
+  }
+
+  .content h4{
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  
+}
+
+.card-login{
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  align-items: center;
+}
+
+/*.box{
+  background-color: white;
+  padding: 20px;
+}*/
+
+.title-descripcion{
+  text-align: center; 
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 110%
+}
+
+.title-libro{
+  font-size: 170%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.title-specs{
+  text-align: center; 
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 110%
+}
+
+.card_reseñas{
+  background-color: aliceblue;
+  border-color: black;
+  padding: 20px;
+  margin-bottom: 1%;
+}
+
+#reseña{
+  width: 100%;
+}
+
+input[type=submit] {
+  width: 15%;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 10px 5px 5px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(174, 214, 248);
+}
+
+.search-box{
+  justify-content: center;
+  text-align: center;
+  width:20%;
+}
+
+#buscar-libro{
+  width: 100%;
+  margin-left: 0%;
+}
+
+
+.descripcion_libro{
+  border-left: 2px solid rgb(174, 214, 248);
+}
+
+#login-btn{
+  font-size: 80%;
+}
+
+
+@media screen and (max-width: 840px) {
+  .campo-registro > input{
+    border: 1px solid #000;
+    border-radius: 25px;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 10px;
+    text-align:center;
+    align-items: center;
+    width: 80%;
+  }
+
+  input[type=submit]{
+    width:80%
+  }
+
+  .search-box{
+    justify-content: center;
+    text-align: center;
+    width:50%;
+  }
+}
+
+.error{
+  text-align: center;
+}
+
+.box-bookdetails{
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.box-bookdetails:hover{
+  
+  background-color: rgb(174, 214, 248);
+}
+

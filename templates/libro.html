@@ -1,0 +1,131 @@
+{% extends "layout.html"%}
+{% block title %}
+{{libro_datos[0][2]}}
+{% endblock %}
+{% block principal %}
+<div class="container-inicio">
+  <nav>
+      <ul class="nav">
+          <li>
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li>
+              <a class="nav-link active" aria-current="page" href="/logout">Cerrar sesión</a>
+          </li>
+      </ul>
+  </nav>
+</div>
+<div class="container content">
+    {% for libro in libro_datos %}
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="container" >
+                <div class="row justify-content-evenly">
+                  <div class="col-md-5 col-12 primera-columna">
+                    <table class="table-descripcion">
+                      <tbody>
+                        <tr>
+                          <th colspan="5" class="title-libro">{{libro.title}}</th>
+                      </tr>
+                      <tr>
+                        <td colspan="5">
+                          <figure>
+                            <img class="portada_libros_individual" src="https://covers.openlibrary.org/b/isbn/{{libro['isbn']}}.jpg" alt="The cover of a book">
+                          </figure>
+                          <hr>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="5" class="title-specs">Detalles</th>
+                      </tr>
+                      <td>
+                      <tr>
+                        <th scope="row">Autor</th>
+                        <td>{{libro.author}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Año de publicación</th>
+                        <td>{{libro.year}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ISBN</th>
+                        <td>{{libro.isbn}}</td>
+                      </tr>
+                      {% if puntaje_promedio %}
+                      <tr>
+                        <th scope="row">Puntaje promedio</th>
+                        <td>{{puntaje_promedio}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nro. de puntuaciones</th>
+                        <td>{{cantidad_valoraciones}}</td>
+                      </tr>
+                      {% else %}
+                      <tr>
+                        <th scope="row">Puntaje promedio</th>
+                        <td>No disponible</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nro. de puntuaciones</th>
+                        <td>No disponible</td>
+                      {% endif %}
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-7 col-12 segunda-columna card_reseñas">
+                    <p>
+                      {{libro_descripcion}}
+                    </p>
+                    {% if reseñas %}
+                    <h4><strong>RESEÑAS</strong></h4>
+                    {% endif %}
+                    {% for reseña in reseñas %}
+                    <div class="reseñas">
+                        <hr><br>
+                        <p>
+                            {{reseña.reseña}} <strong>-{{reseña.usuario}}</strong>
+                        </p>
+                        <h6>Valoracion: {{reseña.puntaje}}</h6>
+                        <hr><br>
+                    </div>
+                    {% endfor %}
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <div class="row">
+                <form action="/{{libro.isbn}}" method="post">
+                  <div class="col-8">
+                    <label for="reseña">Escriba una reseña</label>
+                    <input type="text" id="reseña" name="reseña_usuario" placeholder="Reseña"><br>
+                  </div>
+                  <div class="col-4">
+                    <label for="valoracion">Valoración</label>
+                    <select id="valoracion" name="valoracion">
+                      <option value="0">☆☆☆☆☆</option>
+                      <option value="1">★☆☆☆☆</option>
+                      <option value="2">★★☆☆☆</option>
+                      <option value="3">★★★☆☆</option>
+                      <option value="4">★★★★☆</option>
+                      <option value="5">★★★★★</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                  </form>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
