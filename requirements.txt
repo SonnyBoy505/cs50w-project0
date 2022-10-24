@@ -1,7 +1,0 @@
-Flask
-Flask-Session
-psycopg2-binary
-SQLAlchemy
-python-dotenv
-Werkzeug
-requests
